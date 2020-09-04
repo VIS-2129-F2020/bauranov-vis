@@ -1,0 +1,54 @@
+---
+title: "Assignment X - Aleksandar Bauranov"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: united
+    highlight: zenburn
+
+---
+
+
+In this assignment, I will present how to use R markdown
+
+## 1. Inserting code
+Here, we'll see how to insert code. 
+
+### 1.1 My first code looks like this:
+```{r}
+x <- c(1,2,3,4,5,6)
+b <- 2
+x*b
+```
+Success!
+
+### 1.2. My second piece of code:
+```{r}
+
+for (val in x) {
+  if (val %% 2 == 0)
+    print(val*b)
+}
+
+```
+
+## 2. Style in markdown
+
+Markdown is a simple language that enables us to *make* **the text** neat.
+You can also make lists in it:
+
+1. This is the first ordered bullet,
+2. And the second.
+
+```{r}
+print('This is the final piece of code')
+hist(iris[[2]])
+
+```
+
+You can also write an inline code in R Markdown. For example, two plus two is **`r 2+2`**.
+
+
+
+
